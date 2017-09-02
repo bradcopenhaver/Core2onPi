@@ -9,7 +9,7 @@
 </div>
 <div class="row">
     <div class="col-md-4">
-        <form action="/thing/add" method="post">
+        <form action="/home/SaveThing" method="post">
             <label>Add a thing:</label>
             <input name="thingName" />
             <button type="submit">Submit</button>
@@ -18,7 +18,7 @@
     <div class="col-md-4">
         <h3>Current things:</h3>
         <ul>
-            @foreach (var thing in ViewBag)
+            @foreach (var thing in Model)
             {
                 <li>@thing.Name</li>
             }

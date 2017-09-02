@@ -12,7 +12,16 @@ namespace WebApplication1.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<Thing> model = Thing.GetAll();
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult SaveThing(string thingName)
+        {
+            Thing newThing = new Thing(thingName);
+            newThing.Save();
+            return RedirectToAction("index");
         }
 
         public IActionResult About()
