@@ -52,6 +52,6 @@ namespace WebApplication1
 
     public static class DBConfiguration
     {
-        public static string ConnectionString = "server=localhost;user id=root;password=S3ph!roth;port=3306;database=WebApplication1DB;";
+        public static string ConnectionString = "server=localhost;user id=root;password=S3ph!roth;port=3306;database=webapplication1db;";
     }
 }

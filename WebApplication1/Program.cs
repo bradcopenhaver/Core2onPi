@@ -20,7 +20,7 @@ namespace WebApplication1
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                //.UseUrls(urls: "http://*:80;http://*:8000")
+                .UseUrls(urls: "http://*:80;http://*:8000")
                 .Build();
     }
 }
